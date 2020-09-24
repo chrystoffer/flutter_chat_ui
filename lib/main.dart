@@ -34,31 +34,25 @@ class _MyHomePageState extends State<MyHomePage> {
       extendBody: true, // notch transparent
       backgroundColor: Colors.indigo,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(80.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            AppBar(
-              leading: Icon(Icons.more_vert),
-              iconTheme: IconThemeData(
-                color: Colors.white,
-              ),
-              title: Text('Chat'),
-              centerTitle: true,
-              backgroundColor: Colors.indigo,
-              elevation: 0,
-              actions: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 10),
-                  child: Icon(Icons.search),
-                )
-              ],
-            ),
+        preferredSize: Size.fromHeight(60.0),
+        child: AppBar(
+          leading: Icon(Icons.more_vert),
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+          title: Text('Chat'),
+          centerTitle: true,
+          backgroundColor: Colors.indigo,
+          elevation: 0,
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: Icon(Icons.search),
+            )
           ],
         ),
       ),
       body: Container(
-        height: MediaQuery.of(context).size.height + 240,
         decoration: new BoxDecoration(
           color: Theme.of(context).brightness == Brightness.dark
               ? Theme.of(context).cardColor
@@ -123,13 +117,6 @@ class _MyHomePageState extends State<MyHomePage> {
             IconButton(
               icon: Icon(
                 Icons.chat,
-                color: Colors.white,
-              ),
-              onPressed: () => null,
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.add,
                 color: Colors.white,
               ),
               onPressed: () => null,
