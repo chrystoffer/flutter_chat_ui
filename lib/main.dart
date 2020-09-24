@@ -54,9 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         decoration: new BoxDecoration(
-          color: Theme.of(context).brightness == Brightness.dark
-              ? Theme.of(context).cardColor
-              : Colors.white,
+          color: Colors.indigo,
           borderRadius: new BorderRadius.only(
             topLeft: const Radius.circular(18.0),
             topRight: const Radius.circular(18.0),
