@@ -33,28 +33,25 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       extendBody: true, // notch transparent
       backgroundColor: Colors.indigo,
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60.0),
-        child: AppBar(
-          leading: Icon(Icons.more_vert),
-          iconTheme: IconThemeData(
-            color: Colors.white,
-          ),
-          title: Text('Chat'),
-          centerTitle: true,
-          backgroundColor: Colors.indigo,
-          elevation: 0,
-          actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: Icon(Icons.search),
-            )
-          ],
+      appBar: AppBar(
+        leading: Icon(Icons.more_vert),
+        iconTheme: IconThemeData(
+          color: Colors.white,
         ),
+        title: Text('Chat'),
+        centerTitle: true,
+        backgroundColor: Colors.indigo,
+        elevation: 0,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Icon(Icons.search),
+          )
+        ],
       ),
       body: Container(
         decoration: new BoxDecoration(
-          color: Colors.indigo,
+          color: Colors.white,
           borderRadius: new BorderRadius.only(
             topLeft: const Radius.circular(18.0),
             topRight: const Radius.circular(18.0),
